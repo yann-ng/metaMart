@@ -1,0 +1,60 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: clamp(80%, 1220px, 100%);
+    color: #151F37;
+    margin-top: 2rem;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+}
+.nav_left_logo{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border-right: 1px solid #6b728050;
+    padding-right: 2rem;
+}
+.nav_left_menu{
+    display: flex;
+    color: #6B7280;
+}
+.nav_left_menu_item{
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.nav_left_menu_item:hover{
+    color: #2e333f;
+}
+.nav_right{
+    display: flex;
+    align-items: center;
+}
+.nav_right > div{
+    margin-left: 2rem;
+}
+.nav_right_connectwallet{
+    background-color: #151F37;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nav_right_connectwallet:hover{
+    background-color: #22335a;
+}
+
+@media screen and (max-width: 1170px){
+    .nav{
+        padding: 0 1.875rem;
+    }
+}
+
+@media screen and (max-width: 896px)  {
+    .nav{
+        display: none;
+    }
+}

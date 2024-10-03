@@ -1,0 +1,138 @@
+.rightcore{
+  width: 60%;
+}
+.rightcore_container{
+  width: 100%;
+  padding: 0 4.75rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.rightcore_title{
+  color: #fff;
+  font-size: 3.25rem;
+  margin: 0;
+  line-height: 1.4;
+}
+.rightcore_title_nftinvestment{
+  color: #D6F379;
+  background: url('../assets/img/line.svg') no-repeat bottom;
+}
+.rightcore_title_nftinvestment::before{
+  content:"\a";
+  white-space: pre;
+}
+.rightcore_detail{
+  color: #959FB2;
+  /* font-family: "Space Grotesk", sans-serif; */
+  line-height: 1.6;
+  margin: 0;
+  margin: 2rem 0;
+
+}
+.rightcore_button{
+  color: #151F37;
+  cursor: pointer;
+  background-color: #FFC145;
+  padding: 0.75rem 1.125rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 9px 26px 0 #FFC14544;
+  font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  height:fit-content;
+}
+.rightcore_button:hover{
+  box-shadow: 0 9px 28px 0 #ffc14585;
+  background-color: #fcb72d;
+}
+.rightcore_btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightcore_badge{
+  display: none;
+  animation: rotation 16s ease alternate infinite;
+  transition: animation ease 1s;
+  width: 4rem;
+  height: auto;
+}
+.rightcore_badge:hover{
+  animation-duration: 9999s;
+}
+
+@keyframes rotation {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+.rightcore_startforyou{
+  color: #151F37;
+  margin-top: 11rem ;
+  /* font-family: "Space Grotesk", sans-serif; */
+}
+.rightcore_startforyou_title{
+  font-size: 1.25rem;
+}
+.rightcore_startforyou_items{
+  display: flex;
+  justify-content: space-between;
+}
+.rightcore_startforyou_items_container{
+  position: relative;
+}
+.rightcore_startforyou_items_value{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.rightcore_startforyou_items_value::before{
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 106%;
+  height: 0.75rem;
+  background-color: #D6F379;
+  color: #D6F379;
+}
+.rightcore_startforyou_items_text{
+  color: #6B7280;
+  margin-top: -0.25rem;
+}
+
+@media screen and (max-width: 1170px) {
+  .rightcore{
+    width: 100%;
+  }
+  .rightcore_container{
+    padding: 0 1.875rem;
+  }
+  .rightcore_title{
+    color: #151F37;
+  }
+
+}
+@media screen and (max-width: 990px) {
+  .rightcore_startforyou{
+    margin-top: 4rem ;
+  }
+  .rightcore_badge{
+    display: flex;
+  }
+
+}
+@media screen and (max-width: 640px) {
+  .rightcore_startforyou_items{
+    flex-direction: column;
+  }
+  .rightcore_startforyou_items_container{
+    width: fit-content;
+  }
+  .rightcore_startforyou_items div:nth-child(2){
+    align-self: flex-end;
+  }
+
+
+}

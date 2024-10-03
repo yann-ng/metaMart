@@ -1,0 +1,57 @@
+.core_container{
+  background-image: url('../assets/img/Banner-BG.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: local;
+  height: 612px;
+  width: clamp(80%, 1220px, 100%);
+  margin: 3rem auto;
+  padding: 4rem;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.core_badge{
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  animation: rotation 16s ease alternate infinite;
+  transition: animation ease 1s;
+}
+.core_badge:hover{
+  animation-duration: 9999s;
+}
+
+@keyframes rotation {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 1170px) {
+  .core_container{
+    background-image: none;
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 990px){
+  .core_container{
+    flex-direction: column-reverse;
+    padding: 0;
+    height: auto;
+  }
+  .core_badge{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 896px){
+  .core_container{
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+    height: auto;
+  }
+
+}
